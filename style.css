@@ -1,0 +1,336 @@
+#banner{
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.479)),url(image/pexels-boris-ivas-18823961.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.nav-item .nav-link{
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Playpen Sans', cursive;
+    color: white;
+}
+.nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    height: 3px;
+    background: red;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform .5s;
+}
+.nav-item .nav-link:hover::after{
+    transform-origin: left;
+    transform: scale(1);
+}
+.nav-item .nav-link:hover{
+    color: yellow;
+}
+.notice{
+    position: relative;
+    top: 20%;
+    margin-left: 65px;
+    color: #fff;
+}
+.notice p{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 3px;
+    font-family: 'Playpen Sans', cursive;
+    color: yellow;
+}
+.notice h1{
+    font-size:130px ;
+    line-height: 120px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 0.8px #fff;
+    background: url('image/back.png');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    font-family: 'Playpen Sans', cursive;
+
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.notice h3{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-family: 'Playpen Sans', cursive;
+    color: yellow;
+
+}
+.notice button{
+    margin-left: 10px;
+    border: 2px solid white;
+    border-radius:10px ;
+    width: 110px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+.notice button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.notice button:hover::before{
+    width: 100%;
+}
+.notice button a{
+    font-family: 'Playpen Sans', cursive;
+    text-decoration: none;
+    color: rgb(231, 21, 21);
+}
+.modal-content{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #9d9d9db5;
+}
+.card {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #9d9d9db5;
+}
+.btn-close{
+    float: inline-end;
+    margin-top: 20px;
+}
+.card-header {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid #9d9d9db5;
+    -webkit-backdrop-filter: blur(10px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    opacity: .9;
+}
+
+.form-control {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    opacity: .3;
+}
+label {
+    color: #fff;
+}
+
+form .row {
+    padding: 10px;
+    margin-top: 5px;
+}
+.btn {
+    color: #ffffff;
+}
+#btn-submit {
+    border: none;
+    border-radius: 5px;
+    width: 95px;
+    height: 45px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    background-color: #32ffee;
+    color: white;
+
+}
+#btn-back {
+    float: right;
+    border: none;
+    border-radius: 5px;
+    width: 95px;
+    height: 45px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    background-color: #32ffee;
+    color: white;
+}
+.btnn {
+    position: relative;
+    z-index: 1;
+}
+.btnn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #0c6f67;
+    z-index: -1;
+    transition: 0.3s;
+}
+.btnn:hover::before {
+    width: 100%;
+}
+.row .col-md-4{
+    /* padding-right: calc(var(--bs-gutter-x) * .); */
+}
+h5{
+    font-family: 'Playpen Sans', cursive;
+}
+#speciality-lg #div{
+    margin-left: 90px;
+    margin-top: 15px;
+}
+#speciality-lg #div .d-inline{
+    font-size: 20px;
+}
+#speciality-lg div button{
+    border: 2px solid rgb(255, 0, 0);
+    border-radius:10px ;
+    width: 110px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+#speciality-lg div button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+    border-radius: 8px;
+    z-index: -1;
+    transition: 0.5s;
+}
+#speciality-lg div button:hover::before{
+    width: 100%;
+}
+#speciality-lg div button a{
+    font-family: 'Playpen Sans', cursive;
+    text-decoration: none;
+    color: rgb(255, 221, 0);
+}
+#next-mnu{
+    width: 4%;
+}
+#h3{
+    font-family: 'Playpen Sans', cursive;
+    box-shadow: 4px -3px 10px;
+    margin-top: 50px;
+}
+#about-us{
+    border-radius: 20px;
+    border: 2px solid;
+}
+#h2{
+    margin-left: 10px;
+}
+#container1{
+    background-image: url('image/pexels-nubia-navarro-\(nubikini\)-714912.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#carousel-sm{
+    display: none;
+}
+#speciality-lg ul{
+    margin-top: 13px;
+}
+#speciality-lg img{
+    box-shadow: 20px 5px 11px 5px;
+}
+#speciality-lg #ul-left{
+    margin-left: 28%;
+}
+#speciality-lg ul li{
+    padding: 5px; 
+}
+#jp-food{
+    font-size: 22px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    background: linear-gradient(90deg,#F4511E,#9f2c66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+.navbar{
+    background: transparent !important;
+}
+@media(max-width:786px){
+    .notice h1{
+        font-size: 50px;
+    }
+    .notice{
+        position: relative;
+        top: 5%;
+        margin-left: 8px;
+    }
+    .nav-item .nav-link::after{
+        width: 25%;
+    }
+    #speciality-lg{
+        display: none;
+    }
+    #carousel-sm{
+        display: block;
+    }
+    #carousel-sm div button{
+        border: 2px solid rgb(255, 0, 0);
+        border-radius:10px ;
+        width: 110px;
+        background-color: transparent;
+        position: relative;
+        z-index: 1;
+        left: 23px;
+    }
+    #carousel-sm div button::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: rgb(255, 0, 0);
+        border-radius: 8px;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    #carousel-sm div button:hover::before{
+        width: 100%;
+    }
+    #carousel-sm div button a{
+        font-family: 'Playpen Sans', cursive;
+        text-decoration: none;
+        color: rgb(255, 221, 0);
+    }
+    .notice button{
+        margin-left: -7px;
+    }
+    .notice h3{
+        margin-left: -14px;
+    }
+}
